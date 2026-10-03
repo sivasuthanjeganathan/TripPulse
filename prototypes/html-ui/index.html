@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087e76">
+  <meta name="description" content="TripPulse — a Sri Lanka travel planning and safety companion. Interactive, local-only prototype.">
+  <title>TripPulse — Your next great escape</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#dashboard" aria-label="TripPulse home"><span class="brand-symbol">⌁</span>Trip<span>Pulse</span><i></i></a>
+    <p class="sidebar-label">YOUR NEXT ADVENTURE</p>
+    <nav class="desktop-nav" aria-label="Main navigation"></nav>
+    <div class="sidebar-bottom">
+      <div class="companion-card"><span class="small-icon">✧</span><strong>A little local wisdom.</strong><p>Big adventures start with a smarter plan.</p><button class="text-button" data-nav="ai">Meet your AI companion <span>↗</span></button></div>
+      <button class="sidebar-safety" data-nav="safety"><span data-icon="shield"></span><span>Travel with peace of mind<small>Safety Center is always here</small></span><span>↗</span></button>
+      <button class="user-profile" data-nav="profile"><span class="avatar avatar-main">AK</span><span><strong>Amaya Kumar</strong><small>Curious by nature</small></span><span>⌄</span></button>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb"><span>YOUR TRAVEL COMPANION</span><strong id="page-label">Dashboard</strong></div><a class="mobile-brand brand" href="#dashboard">Trip<span>Pulse</span><i></i></a><div class="topbar-actions"><span class="local-badge"><i></i>Made for Sri Lanka</span><button class="icon-button theme-button" data-action="theme" aria-label="Switch to dark mode"></button><button class="icon-button notification-button" data-action="notifications" aria-label="View notifications"><span data-icon="bell"></span><i></i></button><button class="avatar avatar-main" data-nav="profile" aria-label="Open profile">AK</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="app-footer"><span>Good trips leave you with stories.</span><span><i></i>Local prototype · No live services</span></footer>
+  </div>
+  <nav class="bottom-nav" aria-label="Mobile navigation"></nav>
+  <dialog id="modal" aria-labelledby="modal-title"><div class="modal-heading"><h2 id="modal-title"></h2><button class="icon-button" data-action="close-modal" aria-label="Close dialog">✕</button></div><div id="modal-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
