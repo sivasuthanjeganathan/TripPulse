@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="description" content="TripPulse — Plan smarter. Travel safer. Feel the pulse of Sri Lanka. A self-contained travel planning prototype.">
+  <title>TripPulse · A little further, together</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#welcome" aria-label="TripPulse welcome"><span class="brand-mark" data-icon="pulse"></span><span>Trip<span class="brand-accent">Pulse</span><small>YOUR JOURNEY, CONNECTED</small></span></a>
+    <div class="sidebar-label">WORKSPACE</div>
+    <nav class="desktop-nav" aria-label="Main navigation"></nav>
+    <div class="sidebar-trip"><span class="sidebar-label">YOUR NEXT ESCAPE</span><button data-nav="overview"><span class="tiny-pin"></span><span>Kandy → Trincomalee<small>Weekend with the crew</small></span><span>↗</span></button></div>
+    <div class="sidebar-bottom">
+      <div class="companion-card"><span class="companion-spark" data-icon="spark"></span><strong>A little local wisdom.</strong><p>Less time planning.<br>More moments that matter.</p><button data-nav="ai">Meet TripPulse AI <span>↗</span></button></div>
+      <button class="sidebar-safety" data-nav="safety"><span data-icon="shield"></span><span>Travel with peace of mind<small>Your Safety Center</small></span><span>↗</span></button>
+      <button class="user-profile" data-nav="profile"><span class="avatar avatar-main">AK</span><span><strong id="sidebar-name">Amaya Kumar</strong><small>Always up for a detour</small></span><span>⌄</span></button>
+    </div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="breadcrumb"><span>My workspace</span><span>/</span><strong id="page-label">Dashboard</strong></div>
+      <a class="mobile-brand brand" href="#dashboard"><span class="brand-mark" data-icon="pulse"></span><span>Trip<span class="brand-accent">Pulse</span></span></a>
+      <div class="topbar-actions"><span class="island-label"><span class="status-dot"></span>Made for Sri Lanka</span><button class="icon-button theme-button" data-action="theme" aria-label="Switch to dark mode"></button><button class="icon-button notifications-button" data-nav="notifications" aria-label="View notifications"><span data-icon="bell"></span><span class="notification-dot"></span></button><button class="avatar avatar-main" data-nav="profile" aria-label="Open profile">AK</button></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="app-footer"><span><strong>TripPulse</strong> · A little further, together.</span><span>Interactive prototype <span class="footer-dot">·</span> No live services</span></footer>
+  </div>
+  <nav class="bottom-nav" aria-label="Mobile navigation"></nav>
+  <dialog id="modal" aria-labelledby="modal-title"><div class="modal-heading"><h2 id="modal-title"></h2><button class="icon-button" data-action="close-modal" aria-label="Close dialog"><span data-icon="close"></span></button></div><div id="modal-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
